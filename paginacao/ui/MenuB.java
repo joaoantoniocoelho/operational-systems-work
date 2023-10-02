@@ -149,14 +149,13 @@ public class MenuB {
             switch (option) {
                 case 1:
                     System.out.println("\n       Escolha um programa da lista:");
-                    System.out.println("        1 - Fibonacci");
+                    System.out.println("        1 - Fatorial");
                     System.out.println("        2 - ProgMinimo");
-                    System.out.println("        3 - Fatorial");
-                    System.out.println("        4 - fatorialTRAP");
-                    System.out.println("        5 - fibonacciTRAP");
-                    System.out.println("        6 - bubble sort");
-                    System.out.println("        7 - testeLeitura");
-                    System.out.println("        8 - testeEscrita");
+                    System.out.println("        3 - Fibonacci10");
+                    System.out.println("        4 - FatorialTRAP");
+                    System.out.println("        5 - FibonacciTRAP");
+                    System.out.println("        6 - PB");
+                    System.out.println("        7 - pc");
                     System.out.println("        0 - Sair \n");
 
 
@@ -166,28 +165,25 @@ public class MenuB {
 
                     switch (option2) {
                         case 1:
-                            loadAndExecGM_GP(Programas.fibonacci10);
+                            loadAndExecGM_GP(Programas.fatorial);
                             break;
                         case 2:
                             loadAndExecGM_GP(Programas.progMinimo);
                             break;
                         case 3:
-                            loadAndExecGM_GP(Programas.fatorial);
+                            loadAndExecGM_GP(Programas.fibonacci10);
                             break;
                         case 4:
-//                            loadAndExecGM_GP(Programas.fatorialTRAP2);
+                            loadAndExecGM_GP(Programas.fatorialTRAP);
                             break;
                         case 5:
                             loadAndExecGM_GP(Programas.fibonacciTRAP);
                             break;
                         case 6:
-                            loadAndExecGM_GP(Programas.PC);
+                            loadAndExecGM_GP(Programas.PB);
                             break;
                         case 7:
-                            loadAndExecGM_GP(Programas.testeLeitura);
-                            break;
-                        case 8:
-                            loadAndExecGM_GP(Programas.testeEscrita);
+                            loadAndExecGM_GP(Programas.PC);
                             break;
                         case 0:
                             break;
@@ -243,28 +239,6 @@ public class MenuB {
 
             }
         }
-
-        //--------- Menu - fim ------------------------------------------------------------
-
-        //SistemaT1_v1 s = new SistemaT1_v1(tamMemoria, tamParticao);
-        //System.out.println("Sistema iniciado");
-        //System.out.println("Memória: " + tamMemoria);
-        //System.out.println("Tamanho partição: " + tamParticao );
-        //s.loadAndExecGM_GP(progs.fibonacci10);
-        //s.loadAndExecGM_GP(progs.fatorial);
-        // s.loadAndExec(progs.progMinimo);
-        // s.loadAndExec(progs.fatorial);
-        // s.loadAndExec(progs.fatorialTRAP); // saida
-        // s.loadAndExec(progs.fibonacciTRAP); // entrada
-        // s.loadAndExec(progs.PC); // bubble sort
-
-        // Teste interrupções
-        // s.loadAndExec(progs.testeLeitura);//teste leitura
-        // s.loadAndExec(progs.testeEscrita);//teste escrita
-        // s.loadAndExec(progs.fatorialTeste); // testando registrador inválido
-        // s.loadAndExec(progs.fatorialTesteEndereco); // testando endereço inválido
-        // s.loadAndExec(progs.TestandoOverflow); // testando overflow na soma
-        //s.loadAndExec(progs.TestandoOverflowParam); // testando overflow no parametro recebido
 
     }
 

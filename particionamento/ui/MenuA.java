@@ -125,14 +125,13 @@ public class MenuA {
             switch (option) {
                 case 1:
                     System.out.println("\n       Escolha um programa da lista:");
-                    System.out.println("        1 - Fibonacci");
+                    System.out.println("        1 - Fatorial");
                     System.out.println("        2 - ProgMinimo");
-                    System.out.println("        3 - Fatorial");
-                    System.out.println("        4 - fatorialTRAP");
-                    System.out.println("        5 - fibonacciTRAP");
-                    System.out.println("        6 - bubble sort");
-                    System.out.println("        7 - testeLeitura");
-                    System.out.println("        8 - testeEscrita");
+                    System.out.println("        3 - Fibonacci10");
+                    System.out.println("        4 - FatorialTRAP");
+                    System.out.println("        5 - FibonacciTRAP");
+                    System.out.println("        6 - PB");
+                    System.out.println("        7 - PC");
                     System.out.println("        0 - Sair \n");
 
 
@@ -143,13 +142,13 @@ public class MenuA {
 
                     switch (option2) {
                         case 1:
-                            loadAndExecGM_GP(progs.fibonacci10);
+                            loadAndExecGM_GP(progs.fatorial);
                             break;
                         case 2:
                             loadAndExecGM_GP(progs.progMinimo);
                             break;
                         case 3:
-                            loadAndExecGM_GP(progs.fatorial);
+                            loadAndExecGM_GP(progs.fibonacci10);
                             break;
                         case 4:
                             loadAndExecGM_GP(progs.fatorialTRAP);
@@ -158,15 +157,13 @@ public class MenuA {
                             loadAndExecGM_GP(progs.fibonacciTRAP);
                             break;
                         case 6:
-                            loadAndExecGM_GP(progs.PC);
+                            loadAndExecGM_GP(progs.PB);
                             break;
                         case 7:
-                            loadAndExecGM_GP(progs.testeLeitura);
-                            break;
-                        case 8:
-                            loadAndExecGM_GP(progs.testeEscrita);
+                            loadAndExecGM_GP(progs.PC);
                             break;
                         case 0:
+                            System.exit(0);
                             break;
                     }
                     break;

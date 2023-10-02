@@ -60,7 +60,7 @@ public class Programas {
             new Word(Opcode.DATA, -1, -1, -1),
             new Word(Opcode.DATA, -1, -1, -1)}; // ate aqui - serie de fibonacci ficara armazenada
 
-    public Word[] fatorialTRAP = new Word[]{
+    public static Word[] fatorialTRAP = new Word[]{
             new Word(Opcode.LDI, 0, -1, 7), // numero para colocar na memoria
             new Word(Opcode.STD, 0, -1, 50),
             new Word(Opcode.LDD, 0, -1, 50),
@@ -140,7 +140,7 @@ public class Programas {
             new Word(Opcode.DATA, -1, -1, -1)
     };
 
-    public Word[] PB = new Word[]{
+    public static Word[] PB = new Word[]{
             // dado um inteiro em alguma posição de memória,
             // se for negativo armazena -1 na saída; se for positivo responde o fatorial do
             // número na saída

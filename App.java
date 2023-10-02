@@ -6,11 +6,11 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Choose an option:");
+            System.out.println("Escolha uma opção:");
             System.out.println("1. Particionamento");
             System.out.println("2. Paginação");
-            System.out.println("3. Exit");
-            System.out.print("Your choice: ");
+            System.out.println("3. Sair");
+            System.out.print("Sua escolha: ");
 
             int choice = scanner.nextInt();
 
@@ -22,11 +22,12 @@ public class App {
                     paginacao.ui.MenuB.main(args);
                     break;
                 case 3:
-                    System.out.println("Exiting...");
+                    System.out.println("Saindo...");
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Opção inválida!");
+                    break;
             }
         }
     }
