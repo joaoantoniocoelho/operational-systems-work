@@ -90,7 +90,8 @@ public class CPU_B extends ICPU {
 
 
             if (legal(pc)) { // pc valido
-                ir = m[pc]; // <<<<<<<<<<<< busca posicao da memoria apontada por pc, guarda em ir
+                ir = m[traduzEnderecoProcesso(pc)]; // <<<<<<<<<<<< busca posicao da memoria apontada por pc, guarda em ir
+
                 if (debug) {
                     System.out.print("                               pc: " + pc + "       exec: ");
                     mem.dump(ir);
@@ -209,7 +210,7 @@ public class CPU_B extends ICPU {
                     // Instrucoes JUMP
                     case JMP: // PC <- k desvio incondicional
                         if (enderecoValido(traduzEnderecoProcesso(ir.p))) {
-                            pc = traduzEnderecoProcesso(ir.p);
+                            pc = ir.p;
                             break;
                         } else
                             break;
@@ -358,7 +359,6 @@ public class CPU_B extends ICPU {
                         // temos IO
                         pc++;
                         break;
-
                     // Inexistente
                     default:
                         irpt = Interrupts.intInstrucaoInvalida;

@@ -100,7 +100,7 @@ public class Menu {
 
 
 
-                System.out.println("-      Executando processo: " + idProcesso + " nos frames : " + Arrays.toString(paginasProcesso) + " com pc em: " + pcProcesso + " e tamanho de programa: " + pcbProcesso.getTamanhoProcesso());
+                System.out.println("-      Executando processo: " + idProcesso + " nos frames : " + Arrays.toString(paginasProcesso) + " com pc em: " + pcProcesso + " e tamanho de programa: " + pcbProcesso.tamanhoProcesso);
 
                 ((Sistema1B) sistema).gm.dumpPagina((PCB_B) pcbProcesso); // dump da memoria antes da execucao
 
@@ -196,14 +196,13 @@ public class Menu {
                 switch (option) {
                     case 1:
                         System.out.println("\n       Escolha um programa da lista:");
-                        System.out.println("        1 - Fibonacci");
+                        System.out.println("        1 - Fibonacci10");
                         System.out.println("        2 - ProgMinimo");
                         System.out.println("        3 - Fatorial");
                         System.out.println("        4 - fatorialTRAP");
                         System.out.println("        5 - fibonacciTRAP");
-                        System.out.println("        6 - bubble sort");
-                        System.out.println("        7 - testeLeitura");
-                        System.out.println("        8 - testeEscrita");
+                        System.out.println("        6 - PC");
+                        System.out.println("        7 - PB");
                         System.out.println("        0 - Sair \n");
 
 
@@ -232,10 +231,7 @@ public class Menu {
                                 loadAndExecGM_GP(PC);
                                 break;
                             case 7:
-                                loadAndExecGM_GP(testeLeitura);
-                                break;
-                            case 8:
-                                loadAndExecGM_GP(testeEscrita);
+                                loadAndExecGM_GP(PB);
                                 break;
                             case 0:
                                 break;
